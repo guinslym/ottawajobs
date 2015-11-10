@@ -9,7 +9,7 @@ setup(
 
     version='0.1.3',
 
-    description="Yet another ottawa jobs scrapper",
+    description="Yet another ottawa city jobs scrapper",
 
     url='https://github.com/guinslym/ottawajobs',
 
