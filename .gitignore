@@ -1,4 +1,5 @@
 totrash/
+ottwbot.py
 dist/
 *.egg-info/
 tasks.todo
