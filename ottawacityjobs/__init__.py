@@ -1,4 +1,4 @@
- import requests
+import requests
 
 def get_website_content(language="en"):
     """
@@ -9,13 +9,15 @@ def get_website_content(language="en"):
     i.e.: get_website_content('fr')
     return: json object
     """
+    print('Retrieving all the jobs...')
     language = "en" if str(language).lower() == "en" else "fr"
     website = 'http://www.ottawacityjobs.ca/'+language+'/data/'
     results = requests.get(website)
     results = results.json()
+    print('Done!')
     return results
     
-def get_jobs(results=get_website_content()):
+def get_jobs(results):
     """
     Get the list of jobs in a dict format
     return: dict object
@@ -31,5 +33,5 @@ if __name__ == '__main__':
     jobs = get_jobs(results)
     for job in jobs:
     	job_position = ( "Offre d'empoi de la ville D'#Ottawa: " +job['POSITION']) if (len( "Offre d'empoi de la ville D'#Ottawa: " +job['POSITION']) < 117) else job['POSITION'][0:116]
-    	#print(len(job_position))
+    	print(job_position)
 

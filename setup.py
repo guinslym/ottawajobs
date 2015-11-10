@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 setup(
     name='OttawaCityJobs',
 
-    version='0.1.2',
+    version='0.1.3',
 
     description="Yet another ottawa jobs scrapper",
 

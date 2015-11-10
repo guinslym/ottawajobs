@@ -15,7 +15,7 @@ Usage
 .. code:: python
 import ottawacityjobs as p
 
-p.get_jobs() #retrieve all the jobs
-p.get_website_content() #Retrieves the full jobs description
+results = p.get_website_content() #Retrieves the full jobs description
+results  = .get_jobs(results) #retrieve all the jobs title and their url
 
 
