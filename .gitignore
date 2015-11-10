@@ -1,2 +1,3 @@
 totrash/
+*.egg-info/
 tasks.todo

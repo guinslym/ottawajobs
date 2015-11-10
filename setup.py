@@ -36,8 +36,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Indexing/Search'
     ],
     install_requires=[
-        'requests',
-        'blessings'
+        'requests'
         ],
     keywords='json scrapper jobs city Ottawa',
 
